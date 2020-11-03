@@ -1,0 +1,184 @@
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  z-index: 2;
+}
+
+section {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: hsl(237, 12%, 33%);
+  font-size: 17px;
+}
+
+/* Global Hover Effects */
+h2:hover {
+  color: hsl(14, 88%, 65%);
+}
+
+/* content */
+
+.wrapper-leftImg {
+  position: absolute;
+  left: 350px;
+  top: 425px;
+  z-index: 1;
+}
+
+.container {
+  background: #fff;
+  width: 1050px;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.wrapper-img {
+  position: relative;
+  top: 30px;
+  right: 80px;
+  z-index: 0;
+}
+
+.headingImg {
+  width: 500px;
+}
+
+.wrapper-heading {
+  position: absolute;
+  top: 175px;
+  left: 930px;
+  font-size: 25px;
+}
+
+/* text */
+
+.wrapper-text {
+  margin-top: 75px;
+}
+
+.firstText {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.secondText {
+  margin-top: 30px;
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.thirdText {
+  margin-top: 30px;
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.fourthText {
+  margin-top: 30px;
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.fifthText {
+  margin-top: 30px;
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.hr {
+  width: 400px;
+  background: lightgrey;
+  height: 2px;
+}
+
+.theImg {
+  position: relative;
+}
+.TheTEXT {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+}
+
+/* dropdown */
+
+.show {
+  display: none;
+  color: hsl(237, 12%, 33%);
+}
+.changer {
+  color: #000;
+}
+
+.arrow-changer {
+  rotate: 180deg;
+}
+
+/* Mobile View */
+
+@media only screen and (max-width: 375px) {
+  .headingImg {
+    width: 250px;
+  }
+  .wrapper-img {
+    position: absolute;
+    top: 0;
+  }
+  .key {
+    width: 50px;
+  }
+  .wrapper-leftImg {
+    top: 50px;
+    left: 60px;
+  }
+  .container {
+    width: 325px;
+    height: 600px;
+    margin-top: 50px;
+  }
+  .hr {
+    display: none;
+  }
+  h2 {
+    font-size: 12.5px;
+  }
+  .wrapper-heading {
+    position: absolute;
+    top: 190px;
+    left: 150px;
+    font-size: 15px;
+  }
+  .wrapper-text {
+    margin-top: 150px;
+    width: 200px;
+    margin-left: 60px;
+  }
+  .Fix {
+    text-align: center;
+    width: 200px;
+  }
+  .mobilePTag {
+    font-size: 12.5px;
+  }
+}
